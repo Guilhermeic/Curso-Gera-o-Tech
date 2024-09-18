@@ -37,7 +37,7 @@ h2.titulo {
     text-align: center;
 }
 
-h2.titulo span {
+h1.titulo span.ponto {
     color: #299aeb;
 }
 
@@ -46,7 +46,7 @@ header {
     padding: 40px 4%;
 }
 
-header>.interface {
+header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,6 +94,14 @@ section.topo-do-site .flex {
     font-size: 42px;
     line-height: 40px;
 }
+.topo-do-site p{
+    color: #fff;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    
+}
 
 .topo-do-site .txt-topo-do-site h1 span {
     color: #299aeb;
@@ -131,7 +139,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-    color: #fff;
+    color:#fff;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -144,9 +152,10 @@ box-shadow: 0 0 20px #ffffff69;}
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    color: #299aeb;
+    color:#299aeb;
 
 }
+
 
 .especialidades .especialidades-box h3 {
     font-size: 28px;
