@@ -1,0 +1,14 @@
+header{
+    background-image: url( "imagens/bg.jpg");
+    height: 400px;
+}
+header h1{
+    color: aliceblue;
+    text-align: center;
+}
+.topo{
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+color: aliceblue;
+}
