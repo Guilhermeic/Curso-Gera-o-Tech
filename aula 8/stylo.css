@@ -4,11 +4,15 @@ header{
 }
 header h1{
     color: aliceblue;
-    text-align: center;
+    text-align: justify;
 }
 .topo{
 display: flex;
 justify-content: space-between;
 gap: 1rem;
 color: aliceblue;
+}
+.caixadebusca{
+   display: inline-block;
+   justify-content: flex-start;
 }
