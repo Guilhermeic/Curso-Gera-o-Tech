@@ -24,7 +24,11 @@ header h1{
 }
 .itens{
     display: flex;
+    justify-content: space-around;
 }
 .paragrafoCard{
     width: 200px;
+}
+.h1Topo{
+    margin-top: 100px;
 }
