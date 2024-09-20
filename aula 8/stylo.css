@@ -13,6 +13,30 @@ gap: 1rem;
 color: aliceblue;
 }
 .caixadebusca{
-   display: inline-block;
-   justify-content: flex-start;
+   display: flex;
+   justify-content: center;
+}
+section h1{
+color: #000;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagensCard{
+    width: 150px;
+}
+.itens2{
+    display: flex;
+}
+.paragrafoCard2{
+    width: 150px;
 }

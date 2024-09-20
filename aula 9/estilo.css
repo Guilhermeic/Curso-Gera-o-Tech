@@ -1,0 +1,30 @@
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 0;
+
+}
+.topoHeader{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-image: url(imagens/bg.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+header h1{
+    text-align: center;
+    color: #fff;
+}
+.endereço{
+    text-align: center;
+}
+.linkEndereco{
+    text-align: center;
+}
+.itens{
+    display: flex;
+}
+.paragrafoCard{
+    width: 200px;
+}
