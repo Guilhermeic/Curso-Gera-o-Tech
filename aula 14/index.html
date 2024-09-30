@@ -193,19 +193,24 @@ let y = parsefloat(prompt("Digite um número"))
 let soma = x + y 
 console.log(soma)*/
 
+/*
 let salario = parsefloat(prompt("Digite o salario"))
 let novoSalario = salario * 1,2
-console.log(novoSalario)
+console.log(novoSalario)*/
 
 
+let saldo = parseFloat(prompt("Digite seu saldo"))
+if (saldo <= 500){
+alert ("nenhum credito")}
 
+else if (saldo >= 501 && saldo <=1000){
+alert ("seu saldo é:" + saldo * 0.3)}
 
+else if (saldo >= 1001 && saldo <=3000){
+alert ("seu saldo é:" + saldo * 0.4)}
 
-
-
-
-
-
+else if (saldo >= 3001){
+alert ("seu saldo é:" + saldo * 0.5)}
 
 
 </script>
