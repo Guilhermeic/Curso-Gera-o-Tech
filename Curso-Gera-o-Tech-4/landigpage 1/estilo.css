@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.conteudos {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #00b65a;
+    padding: 50px 0;
+    color: white;
+}
+
+header .logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.inscricao input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.inscricao button{
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.informacoes {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.recursos {
+    padding: 50px 0;
+}
+
+.recursos .recursos {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.recursos img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.recursos h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recursos p {
+    font-size: 16px;
+    color: #666;
+}
+
+.depoimentos {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.depoimentos blockquote {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.depoimentos footer {
+    font-size: 18px;
+    font-style: italic;
+    color: #999;
+}
+
+.avaliacao {
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.perguntas {
+    padding: 50px 0;
+}
+
+.perguntas h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.perguntas .pergunta {
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

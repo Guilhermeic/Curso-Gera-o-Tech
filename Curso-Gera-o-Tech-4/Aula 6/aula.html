@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#conteudo {
+				background: #dcdcdc;
+				height: 600px;
+				display:flex ;
+
+                flex-direction: inline;
+
+                flex-wrap: wrap;
+
+                justify-content: space-around;
+
+				/*
+				row|row-reverse|column|column-reverse 
+                
+            
+				
+				flex-direction: row ;
+				*/
+				/*
+				nowrap|wrap|wrap-reverse
+				
+				flex-wrap: nowrap ;
+				*/
+				/*
+				flex-start|flex-end|center|space-between|space-around
+				
+				justify-content: space-between ;
+				*/
+				/*
+				stretch|center|flex-start|flex-end|baseline
+				
+				align-items:center;
+				*/
+			}
+
+			.item {
+				margin:10;
+				background: white;
+				border: 1px solid gray;
+				height: 200px;
+                width: 200px;
+                padding: 0px;
+                margin: 0px;
+            }
+            p{
+                text-align: justify;
+                padding: 10px;
+                background-color: gold;
+                border: solid 5px #f504ad;
+                margin: 10px
+            }
+			
+			/*.ordem1{
+				order: 1;
+			}
+			.ordem2{
+				order: 2;
+			}
+			.ordem3{
+				order:3;
+			}
+			.ordem4{
+				order: 4;
+			}
+
+			.item1{
+				flex-grow: 1;
+			}
+			.item2{
+				flex-shrink: 3;
+				flex-basis: 100;
+			}
+			*/
+		</style>
+
+	</head>
+
+	<body>	
+
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item"><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+			<div class="item ">02</div>
+			<div class="item">03</div>
+			<div class="item ">04</div>
+			<div class="item ">05</div>
+		</div>
+
+		
+	</body>
+
+</html>

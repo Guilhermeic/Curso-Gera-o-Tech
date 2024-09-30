@@ -1,0 +1,42 @@
+header{
+    background-image: url( "imagens/bg.jpg");
+    height: 400px;
+}
+header h1{
+    color: aliceblue;
+    text-align: justify;
+}
+.topo{
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+color: aliceblue;
+}
+.caixadebusca{
+   display: flex;
+   justify-content: center;
+}
+section h1{
+color: #000;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagensCard{
+    width: 150px;
+}
+.itens2{
+    display: flex;
+}
+.paragrafoCard2{
+    width: 150px;
+}
