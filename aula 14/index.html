@@ -196,21 +196,24 @@
     /*
     let salario = parsefloat(prompt("Digite o salario"))
     let novoSalario = salario * 1,2
-    console.log(novoSalario)*/
+    console.log(novoSalario)
 
-    /*
+    
     let saldo = parseFloat(prompt("Digite seu saldo"))
     if (saldo <= 500){
     alert ("nenhum credito")}
-    
-    else if (saldo >= 501 && saldo <=1000){
+    else if (saldo >= 501 && saldo <=1000)
+    { let credito = saldo * (30 / 100)
     alert ("seu saldo é:" + saldo * 0.3)}
     
     else if (saldo >= 1001 && saldo <=3000){
+        let credito = saldo * (40 / 100)
     alert ("seu saldo é:" + saldo * 0.4)}
     
     else if (saldo >= 3001){
-    alert ("seu saldo é:" + saldo * 0.5)}*/
+        alert credito = saldo * (50 / 100)
+    alert ("seu saldo é:" + saldo * 0.5)}
+
     /*
     let idade = parseInt(prompt("Digite sua idade"))
     if (idade <= 17){
@@ -220,31 +223,69 @@
     }else if (idade >=16 <=18 && idade >65){
         alert ("eleitor facultativo")
     }
+
+    let prato = parseInt(prompt("Digite seu prato:\n1 - Vegetariano\n2 - Peixe\n3 - Frango\n4 - Carne"))
     
-    let prato = parseInt(prompt("Digite seu prato"))
-    let sobremesa = parseInt(prompt("Digite sua sobremesa"))
-    let bebidas = parseInt(prompt("Digite sua bebida"))
+    let caloria = 0
+   
+    if (prato == 1){
+        caloria = caloria + 180
+    }else if (prato == 2){
+        caloria += 230
+    }else if (prato == 3){
+        caloria += 250
+    }else if (prato ==4){
+        caloria += 350
+    }
+ 
 
+    let sobremesa = parseInt(prompt("Digite seu prato:\n1 - Abacaxi\n2 Sorvete diet\n3 - Mouse diet\n4 - Mouse chocolate"))
 
-    let semana = parseInt(prompt("Digite um numero de 1 a 7"))
-    if (semana === 1){
-        alert("domingo")
-    }else if (semana === 2) {
-        alert("segunda-feira")
-    } else if (semana === 3) {
-        alert('terça-feira')
-    } else if (semana === 4) {
-        alert("quarta-feira")
-    } else if (semana === 5) {
-        alert("quinta-feira")
-    } else if (semana === 6) {
-        alert("sexta-feira")
-    } else if (semana === 7) {
-        alert("sábado")
-    } else {
-        alert(" Número inválido! Digite um nùmero entre 1 e 7.")
-    }*/
+    if (sobremesa == 1){
+        caloria = caloria + 75
+    }else if (sobremesa == 2){
+        caloria += 110
+    }else if (sobremesa == 3){
+        caloria += 170
+    }else if (sobremesa ==4){
+        caloria += 200
+    }
 
+    let bebida = parseInt(prompt("Digite seu prato:\n1 - Chá\n2 Suco de laranja\n3 - Suco de melão\n4 - Refrigerante diet"))
+
+    if (bebida == 1){
+        caloria = caloria + 75
+    }else if (bebida == 2){
+        caloria += 110
+    }else if (bebida == 3){
+        caloria += 170
+    }else if (bebida ==4){
+        caloria += 200
+    }
+
+alert ( "caloria total:" + caloria )
+
+    
+        let semana = parseInt(prompt("Digite um numero de 1 a 7"))
+        if (semana === 1){
+            alert("domingo")
+        }else if (semana === 2) {
+            alert("segunda-feira")
+        } else if (semana === 3) {
+            alert('terça-feira')
+        } else if (semana === 4) {
+            alert("quarta-feira")
+        } else if (semana === 5) {
+            alert("quinta-feira")
+        } else if (semana === 6) {
+            alert("sexta-feira")
+        } else if (semana === 7) {
+            alert("sábado")
+        } else {
+            alert(" Número inválido! Digite um nùmero entre 1 e 7.")
+        }
+
+    /*
 let numero = parseInt(prompt(" digite um numero inteiro"))
 if (isNaN(numero)) {
     alert("Por favor, digite um numero valido")
@@ -253,11 +294,25 @@ if (isNaN(numero)) {
 }else {
     alert(" O numero  "  + numero + " é impar.")
 }
+*/
+    let senha = 'lobo'
+    let senhaDigitada = prompt('Digite a senha:')
 
-
-
-
-
+    for (let i = 0; i <= 3; i++) {
+        if (senha == senhaDigitada) {
+            alert('Senha correta')
+            break
+        } else {
+            alert('Senha icorreta')
+            senhaDigitada = prompt('Digite a senha:')
+        }
+    }
+    console.log(i)
+    if (i == 3 && senha != senhaDigitada) {
+        alert('senha bloqueada')
+    } else {
+        alert('Senha incorreta')
+    }
 </script>
 
 <body></body>
