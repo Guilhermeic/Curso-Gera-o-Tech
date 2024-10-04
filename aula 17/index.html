@@ -165,19 +165,25 @@ do{
         } while (numeroDigitado != 0);
         alert("A média é" + media.toFixed(2));
 
+
         let numeroDigitado = 0
         let cont = 0
+let numerosImpares = []
+
         do {
             numeroDigitado = parseInt(prompt("Digite um número"))
             if (numeroDigitado % 2 == 1) {
-                cont++
+                cont++;
+                numerosInpares[cont] = numeroDigitado
             } else {
                 cont = 0
             }
         } while (cont != 5)
-alert('Você digitou 5 números impares consecutivamente')
-*/
+alert('Você digitou 5 números impares consecutivamente \nSão eles:'+
+    numerosImpares
+  );
 
+/*
 //Array
 
 let frutas = []
@@ -186,9 +192,7 @@ let frutas = []
  }
  alert(frutas)
 
-
-
-
+*/
 
 
     </script>
