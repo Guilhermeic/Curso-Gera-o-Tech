@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* questão 1
+        function classificar(idade) {
+            if (idade < 5) {
+                alert('inclassificável')
+            } else if (idade >= 5 && idade < 7) {
+                alert("infantil a")
+            } else if (idade >= 8 && idade < 11) {
+                alert("infantil b")
+            } else if (idade >= 11 && idade < 14) {
+                alert("juvenil a")
+            } else if (idade >= 14 && idade < 18) {
+                alert("juvenil b")
+            } else if (idade >= 18) {
+                alert("maiores de adulto")
+            }
+        }
+        let idade = parseInt(prompt('digite sua idade'))
+
+        classificar(idade)
+*/
+        /*
+                let valor = parseInt(prompt('digite um numero'))
+                
+                function verifica(valor) {
+                    if (valor > 0) {
+                        return true
+                    } else if (valor < 0) {
+                        return false
+                    }else if (valor == 0) {
+                        return null
+                    }
+                }
+                let resuldado = verifica(valor)
+                alert(resuldado)
+        */
+        /*
+                function (a, b, c) {
+                    let ordenado = []
+                    if (a < b && a < c) {
+                        ordenado[0] = a
+                        if (b < c) {
+                            ordenados[1] = b
+                            ordenado[2] = c
+                        } else {
+                            ordenado[1] = c
+                            ordenado[2] = b
+                        }
+                    }
+                    return ordenados
+                }
+        
+        */
+        numeros = [1, 2, 3, 4, 5,]
+        let numPares = (numeros) => {
+            let pares = []
+            for (let i = 0; i < numeros.lenght; i++) {
+                if (numeros[i] % 2 == 0) {
+                    pares.push(numeros[i])
+                }
+            }
+            return pares
+        }
+        alert(numPares(numeros))
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
