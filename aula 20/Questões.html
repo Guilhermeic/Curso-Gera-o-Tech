@@ -42,33 +42,68 @@
                 alert(resuldado)
         */
         /*
-                function (a, b, c) {
-                    let ordenado = []
-                    if (a < b && a < c) {
-                        ordenado[0] = a
-                        if (b < c) {
-                            ordenados[1] = b
-                            ordenado[2] = c
-                        } else {
-                            ordenado[1] = c
-                            ordenado[2] = b
-                        }
-                    }
-                    return ordenados
-                }
+            
         
         */
-        numeros = [1, 2, 3, 4, 5,]
-        let numPares = (numeros) => {
-            let pares = []
-            for (let i = 0; i < numeros.lenght; i++) {
-                if (numeros[i] % 2 == 0) {
-                    pares.push(numeros[i])
-                }
+        /*
+         numeros = [1, 2, 3, 4, 5,]
+         let numPares = (numeros) => {
+             let pares = []
+             for (let i = 0; i < numeros.lenght; i++) {
+                 if (numeros[i] % 2 == 0) {
+                     pares.push(numeros[i])
+                 }
+             }
+             return pares
+         }
+         alert(numPares(numeros))
+ */
+        /*
+        function (a, b, c) {
+                            let ordenado = []
+                            if (a < b && a < c) {
+                                ordenado[0] = a
+                                if (b < c) {
+                                    ordenados[1] = b
+                                    ordenado[2] = c
+                                } else {
+                                    ordenado[1] = c
+                                    ordenado[2] = b
+                                }
+                            }
+                            return ordenados
+                        }
+        */
+
+        let controle = 0
+        let tarefas = ['t1','t2','t3']
+        while (controle != "sair") {
+            controle = prompt('quer adicionar, remover ou sair ?')
+            if (controle == 'adicionar') {
+                // alert('adicionar')
+                addTarefa(tarefas)
+            } else if (controle == 'remover') {
+                // alert('remover')
+                remTarefa(tarefas)
+            } else if (controle == 'sair') {
+                // alert("sair")
             }
-            return pares
         }
-        alert(numPares(numeros))
+        alert(tarefas)
+
+        function addTarefa(tarefas) {
+            let tarefa = prompt("Digite a tarefa")
+            tarefas.push(tarefa)//estou adicionando no array de 'tarefas'
+            return tarefas
+        }
+        function remTarefa(tarefas) {
+            let tarefa = prompt("suas tarefas são" + tarefas + "\nDigite qual tarefa você quer remover ?")
+            let index = tarefas.indexOf(tarefa)
+            tarefas.splice(index, 1)
+            return tarefas
+        }
+
+
 
 
 
