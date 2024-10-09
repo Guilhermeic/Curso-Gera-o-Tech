@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <input id="nome" type="text" name="nome" placeholder="Digite seu nome">
+    <input type="submit" value="trocar" name="" id="" onclick="capturaNome()">
+    <br>
+    <input id="email" type="email" name="nome" placeholder="Digite seu email">
+</body>
+<script>
+
+    function capturaNome() {
+        let inp1 = document.getElementById('nome')
+        let inp2 = document.getElementById('email')
+        let aux = ''
+
+        aux = inp1.value
+        inp1.value = inp2.value
+        inp2.value = aux
+    }
+</script>
+
+</html>
