@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="email" id="caixa1" nome="nome" placeholder="Digite alguma coisa">
+    <input type="submit" value="exibir" name="" id="" onclick="capturaCaixa()">
+    <br>
+    <input type="password" id="caixa2" nome="nome" placeholder="Digite outra coisa">
+</body>
+<script>
+
+// value serve para manipular valores dos input's para pegar somente ele e não o imput todo
+// comparenteses() = função
+// sem parenteses() = 
+    function capturaCaixa() {
+        let caixa1 = document.getElementById('caixa1')
+        let caixa2 = document.getElementById('caixa2')
+        // console.log(caixa1.value);
+        // console.log(caixa2.value);
+        if (caixa1.value == '' || caixa2.value == '') {
+            alert("Erro")
+        }else{
+            alert("Items enviados")
+        }
+    }
+</script>
+
+</html>
