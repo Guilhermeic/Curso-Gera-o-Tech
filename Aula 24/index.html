@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="caixa">
+    <p>texto</p>
+</div>
+
+<h1> Manipulação de Estrutura dos elementos</h1>
+
+<div onclick id="lista" style = "width: 150px; height: 300px; border: solid; border-radius: ;">
+
+</div>
+
+</body>
+<script>
+
+let caixa= document.getElementById('caixa')
+console.log(caixa)
+caixa.style.backgroundColor = 'red'
+caixa.style.color = 'white'
+caixa.style.fontSize = '15pt'
+caixa.style.fontFamily = 'Arial'
+caixa.style.display = 'none'
+caixa.style.display = ''
+
+function adicionarParagrafo(){
+let lista = document.getElementById('lista')
+let paragrafo = document.createElement('p')
+paragrafo.innerHTML = 'Texto 2'
+//Adiciona um elemento no final do elemento pai
+//lista.appendChild(paragrafo)
+}
+
+
+
+
+</script>
+</html>

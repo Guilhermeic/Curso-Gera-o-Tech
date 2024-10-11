@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1></h1>
+        <input type="text" id="marca" nome="nome" placeholder="Digite a marca">
+        <br>
+        <input type="text" id="modelo" nome="nome" placeholder="Digite o modelo">
+        <br>
+        <input type="text" id="cor" nome="nome" placeholder="Digite a cor">
+        <br>
+        <input type="text" id="ano" nome="nome" placeholder="Digite o Ano">
+        <br>
+        <input type="text" id="imagem" nome="nome" placeholder="Digite a imagem">
+        <br>
+        <input onclick="cadastrarCarro()" type="submit">
+    </div>
+
+    <div>
+        <h1>Buscar o carro</h1>
+        <input type="text" id="modeloBuscado">
+        <button type="button">Buscar</button>
+    </div>
+
+</body>
+
+<script>
+    let carros = []
+    function cadastrarCarro() {
+        let modeloDigitado = document.getElementById("modelo").value
+        let corDigitado = document.getElementById("cor").value
+        let anoDigitado = document.getElementById("ano").value
+        let imagemDigitado = document.getElementById("imagem").value
+        let marcaDigitado = document.getElementById("marca").value
+
+        let carro = {
+            modelo: modeloDigitado,
+            cor: corDigitado,
+            ano: anoDigitado,
+            imagem: imagemDigitado,
+            marca: marcaDigitado,
+        }
+        carros.push(carro)
+        console.log(carros)
+    }
+    function buscar() {
+        let busca = document.getElementsById('modeloBuscado').value
+        busca = parseInt(busca)
+        let carroBuscado = carros[busca]
+        console.log(carroBuscado.modelo)
+
+
+        let titulo = document.createElement('h1')
+        titulo.innerHTML = carroBuscado.modelo
+
+        let divResultado = document.getElementById('campoBusca')
+        divResultado.appendChild(titulo)
+
+    }
+
+
+</script>
+
+</html>
