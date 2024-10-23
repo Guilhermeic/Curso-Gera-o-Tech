@@ -1,11 +1,10 @@
-.container {
-    position: relative;
-    height: 300px;
-    width: 300px;
-}
 section{
     display: flex;
-    justify-content: space-around;
     padding-top: 50px;
     padding-right: 50px;
+    align-items:center;
+    gap: 100px;
+}
+.shoesElipse{
+    
 }
